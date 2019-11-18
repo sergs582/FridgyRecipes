@@ -2,7 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yQ1-hR-cV8">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -62,7 +63,7 @@
                     <view key="view" contentMode="scaleToFill" id="Sez-X1-72P">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="DefColor"/>
                         <viewLayoutGuide key="safeArea" id="THu-fK-BhS"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="For You" image="For You" id="TDm-mo-BhR"/>
@@ -87,10 +88,10 @@
             </objects>
             <point key="canvasLocation" x="337.68115942028987" y="-118.52678571428571"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab View Controller-->
         <scene sceneID="T6w-9a-Pwc">
             <objects>
-                <tabBarController id="yQ1-hR-cV8" sceneMemberID="viewController">
+                <tabBarController modalPresentationStyle="fullScreen" id="yQ1-hR-cV8" customClass="TabViewController" customModule="Fridgy_Recipes" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IzM-uO-5eM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -133,6 +134,9 @@
     <resources>
         <image name="For You" width="28" height="28"/>
         <image name="Shopping List" width="19" height="24"/>
+        <namedColor name="DefColor">
+            <color red="1" green="1" blue="0.05000000074505806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
     <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

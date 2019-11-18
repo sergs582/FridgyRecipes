@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInStack" customModule="Fridgy_Recipes" customModuleProvider="target">
+            <connections>
+                <outlet property="SignInAppleButton" destination="4R9-Xc-NAH" id="rAB-7I-IYy"/>
+                <outlet property="SignInFacebookButton" destination="ufY-wK-rXW" id="10Y-qj-4z2"/>
+                <outlet property="SignInGoogleButton" destination="rgz-7h-3kT" id="1fF-qs-pD6"/>
+                <outlet property="contentView" destination="Blq-Pz-WFU" id="BYx-Ya-Z9H"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Blq-Pz-WFU">
+            <rect key="frame" x="0.0" y="0.0" width="596" height="585"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="hNq-ZM-R7L">
+                    <rect key="frame" x="0.0" y="0.0" width="596" height="585"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctt-eu-FXK">
+                            <rect key="frame" x="0.0" y="0.0" width="596" height="61"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="51"/>
+                            <color key="textColor" name="PresentationTitleColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="IBP-tf-MRi">
+                            <rect key="frame" x="0.0" y="77" width="596" height="396"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4R9-Xc-NAH">
+                                    <rect key="frame" x="0.0" y="0.0" width="596" height="122"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="Sign In with Apple">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="SignWithApple:" destination="-1" eventType="touchUpInside" id="kI8-kd-xQU"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgz-7h-3kT">
+                                    <rect key="frame" x="0.0" y="137" width="596" height="122"/>
+                                    <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="Sign In with Google">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="SignWithGoogle:" destination="-1" eventType="touchUpInside" id="UFc-zz-fzQ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufY-wK-rXW">
+                                    <rect key="frame" x="0.0" y="274" width="596" height="122"/>
+                                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="Log In with Facebook">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="SignWithFacebook:" destination="-1" eventType="touchUpInside" id="2hb-cv-vjV"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Bw-yJ-XIQ">
+                            <rect key="frame" x="0.0" y="489" width="596" height="20"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MS0-jw-0Lu">
+                                    <rect key="frame" x="286.33333333333331" y="0.0" width="23.666666666666686" height="20.333333333333332"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" name="PresentationDescriptionColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zmQ-iz-dHW">
+                                    <rect key="frame" x="0.0" y="9" width="276.33333333333331" height="2"/>
+                                    <color key="backgroundColor" red="0.99725753070000001" green="0.32844179870000001" blue="0.41175219419999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="2" id="2do-KP-cRB"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6r-Hl-Fm7">
+                                    <rect key="frame" x="320" y="9" width="276" height="2"/>
+                                    <color key="backgroundColor" red="0.99725753070000001" green="0.32844179870000001" blue="0.41175219419999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="2" id="h4I-Wr-t70"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="z6r-Hl-Fm7" firstAttribute="leading" secondItem="MS0-jw-0Lu" secondAttribute="trailing" constant="10" id="26t-5b-WxJ"/>
+                                <constraint firstItem="MS0-jw-0Lu" firstAttribute="centerX" secondItem="5Bw-yJ-XIQ" secondAttribute="centerX" id="6dQ-Jj-dVy"/>
+                                <constraint firstItem="z6r-Hl-Fm7" firstAttribute="centerY" secondItem="5Bw-yJ-XIQ" secondAttribute="centerY" id="8eR-CI-teq"/>
+                                <constraint firstAttribute="height" constant="20" id="CCk-mp-miY"/>
+                                <constraint firstItem="MS0-jw-0Lu" firstAttribute="leading" secondItem="zmQ-iz-dHW" secondAttribute="trailing" constant="10" id="Mme-yD-7DM"/>
+                                <constraint firstItem="zmQ-iz-dHW" firstAttribute="centerY" secondItem="5Bw-yJ-XIQ" secondAttribute="centerY" id="gij-Vf-DHX"/>
+                                <constraint firstItem="zmQ-iz-dHW" firstAttribute="leading" secondItem="5Bw-yJ-XIQ" secondAttribute="leading" id="i9U-0u-8qM"/>
+                                <constraint firstItem="MS0-jw-0Lu" firstAttribute="centerY" secondItem="5Bw-yJ-XIQ" secondAttribute="centerY" id="oOt-YS-UuS"/>
+                                <constraint firstAttribute="trailing" secondItem="z6r-Hl-Fm7" secondAttribute="trailing" id="u4c-3P-EMm"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4s-rY-QRX">
+                            <rect key="frame" x="0.0" y="525" width="596" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="5x4-PY-dLn"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="Enter as a Guest">
+                                <color key="titleColor" name="PresentationDescriptionColor"/>
+                            </state>
+                            <connections>
+                                <action selector="EnterAsGuest:" destination="-1" eventType="touchUpInside" id="Kke-gH-0Na"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hNq-ZM-R7L" secondAttribute="bottom" id="0go-rj-mgZ"/>
+                <constraint firstItem="hNq-ZM-R7L" firstAttribute="leading" secondItem="Blq-Pz-WFU" secondAttribute="leading" id="D3d-8E-8OR"/>
+                <constraint firstAttribute="trailing" secondItem="hNq-ZM-R7L" secondAttribute="trailing" id="Stb-2a-5qu"/>
+                <constraint firstItem="hNq-ZM-R7L" firstAttribute="top" secondItem="Blq-Pz-WFU" secondAttribute="top" id="xBR-6i-k9v"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-382" y="151"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="PresentationDescriptionColor">
+            <color red="0.28999999165534973" green="0.29399999976158142" blue="0.28999999165534973" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="PresentationTitleColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

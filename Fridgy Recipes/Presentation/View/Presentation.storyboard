@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Presentation Page View Controller-->
+        <scene sceneID="dul-1R-ZPp">
+            <objects>
+                <pageViewController storyboardIdentifier="pages" autoresizesArchivedViewToFullSize="NO" modalPresentationStyle="fullScreen" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="sne-cU-fKZ" customClass="PresentationPageViewController" customModule="Fridgy_Recipes" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Tx-11-Gab" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-109" y="145"/>
+        </scene>
+        <!--Presentation View Controller-->
+        <scene sceneID="Axr-1s-hd3">
+            <objects>
+                <viewController storyboardIdentifier="presentation" id="kz7-YW-jFr" customClass="PresentationViewController" customModule="Fridgy_Recipes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qmz-1X-zNh">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BLp-u7-iHl">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="rgu-L2-gIG"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0QF-j0-Spj">
+                                <rect key="frame" x="-156" y="625" width="1081" height="706"/>
+                                <color key="backgroundColor" name="PresentationBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="706" id="Z2z-lO-KcX"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CTX-lS-6xk">
+                                <rect key="frame" x="0.0" y="624" width="768" height="400"/>
+                                <subviews>
+                                    <view hidden="YES" autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ubM-NV-Ufo" customClass="SignInStack" customModule="Fridgy_Recipes" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="-100" width="708" height="412"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="412" id="xiK-xt-TGm"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="redraw" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="7xK-CL-Tvc">
+                                        <rect key="frame" x="60" y="40" width="648" height="276"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="fIg-0F-Q7d">
+                                                <rect key="frame" x="0.0" y="0.0" width="648" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="Dn3-Jb-u3k"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <color key="textColor" name="PresentationTitleColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YFc-ag-HJ8">
+                                                <rect key="frame" x="0.0" y="97" width="648" height="2"/>
+                                                <color key="backgroundColor" red="0.99725753070000001" green="0.32844179870000001" blue="0.41175219419999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="2" id="7Cx-OW-Xed"/>
+                                                </constraints>
+                                            </view>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Description" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOC-gV-T1b">
+                                                <rect key="frame" x="0.0" y="126" width="648" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="0Jh-67-7Ze"/>
+                                                </constraints>
+                                                <color key="textColor" name="PresentationDescriptionColor"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="fmK-BO-SZI">
+                                        <rect key="frame" x="364.5" y="342" width="39" height="37"/>
+                                        <color key="pageIndicatorTintColor" red="0.84706455469999997" green="0.84704858059999999" blue="0.84705942869999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="currentPageIndicatorTintColor" red="0.99725753070000001" green="0.32844179870000001" blue="0.41175219419999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </pageControl>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="2YA-xz-E2n"/>
+                                    <constraint firstItem="ubM-NV-Ufo" firstAttribute="leading" secondItem="CTX-lS-6xk" secondAttribute="leading" constant="30" id="9OK-94-kyz"/>
+                                    <constraint firstAttribute="trailing" secondItem="ubM-NV-Ufo" secondAttribute="trailing" constant="30" id="MsA-bF-1I0"/>
+                                    <constraint firstAttribute="trailing" secondItem="7xK-CL-Tvc" secondAttribute="trailing" constant="60" id="Rbs-Zv-2k7"/>
+                                    <constraint firstItem="7xK-CL-Tvc" firstAttribute="top" secondItem="CTX-lS-6xk" secondAttribute="top" constant="40" id="cHH-FB-Qm2"/>
+                                    <constraint firstItem="ubM-NV-Ufo" firstAttribute="top" secondItem="CTX-lS-6xk" secondAttribute="top" constant="-100" id="cWp-Ed-uKb"/>
+                                    <constraint firstAttribute="bottom" secondItem="fmK-BO-SZI" secondAttribute="bottom" constant="21" id="lMW-g4-pNQ"/>
+                                    <constraint firstItem="7xK-CL-Tvc" firstAttribute="leading" secondItem="CTX-lS-6xk" secondAttribute="leading" constant="60" id="mOI-2f-sxf"/>
+                                    <constraint firstItem="fmK-BO-SZI" firstAttribute="centerX" secondItem="CTX-lS-6xk" secondAttribute="centerX" id="xWU-Gw-cOI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BLp-u7-iHl" secondAttribute="trailing" id="DbG-mj-rNH"/>
+                            <constraint firstAttribute="trailing" secondItem="0QF-j0-Spj" secondAttribute="trailing" constant="-157" id="Dn6-pc-0Vy"/>
+                            <constraint firstItem="0QF-j0-Spj" firstAttribute="leading" secondItem="Qmz-1X-zNh" secondAttribute="leading" constant="-156" id="MqX-Sk-WkR"/>
+                            <constraint firstAttribute="bottom" secondItem="CTX-lS-6xk" secondAttribute="bottom" id="PA5-eu-xn5"/>
+                            <constraint firstAttribute="bottom" secondItem="0QF-j0-Spj" secondAttribute="bottom" constant="-307" id="gxc-Lx-DtT"/>
+                            <constraint firstItem="Vl2-eM-Pk5" firstAttribute="trailing" secondItem="CTX-lS-6xk" secondAttribute="trailing" id="hGK-Gd-5mk"/>
+                            <constraint firstItem="BLp-u7-iHl" firstAttribute="leading" secondItem="Vl2-eM-Pk5" secondAttribute="leading" id="lMM-la-edl"/>
+                            <constraint firstItem="BLp-u7-iHl" firstAttribute="top" secondItem="Qmz-1X-zNh" secondAttribute="top" id="vYM-rV-PBr"/>
+                            <constraint firstItem="CTX-lS-6xk" firstAttribute="leading" secondItem="Vl2-eM-Pk5" secondAttribute="leading" id="x5r-tN-V34"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vl2-eM-Pk5"/>
+                    </view>
+                    <connections>
+                        <outlet property="LineView" destination="YFc-ag-HJ8" id="6zQ-02-nDK"/>
+                        <outlet property="SignInStack" destination="ubM-NV-Ufo" id="c1v-DX-1HY"/>
+                        <outlet property="Stack" destination="7xK-CL-Tvc" id="koc-KF-gXh"/>
+                        <outlet property="ViewDescription" destination="OOC-gV-T1b" id="NzY-Yc-sLT"/>
+                        <outlet property="ViewTitle" destination="fIg-0F-Q7d" id="ize-qC-pqE"/>
+                        <outlet property="image" destination="BLp-u7-iHl" id="Sab-8M-Den"/>
+                        <outlet property="pageControl" destination="fmK-BO-SZI" id="QjD-qW-mnK"/>
+                        <outlet property="rotateView" destination="0QF-j0-Spj" id="Jxh-cG-Uup"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gl4-n7-GXN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950.625" y="144.71830985915494"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="PresentationBackgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="PresentationDescriptionColor">
+            <color red="0.28999999165534973" green="0.29399999976158142" blue="0.28999999165534973" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="PresentationTitleColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8746258E238314E8004A7D48 /* SignInDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8746258D238314E8004A7D48 /* SignInDelegateProtocol.swift */; };
 		8799CFD9236ACE05008AC584 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8799CFD8236ACE05008AC584 /* AppDelegate.swift */; };
 		8799CFDB236ACE05008AC584 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8799CFDA236ACE05008AC584 /* SceneDelegate.swift */; };
 		8799CFE0236ACE05008AC584 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8799CFDE236ACE05008AC584 /* Main.storyboard */; };
 		8799CFE2236ACE06008AC584 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8799CFE1236ACE06008AC584 /* Assets.xcassets */; };
 		8799CFE5236ACE06008AC584 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8799CFE3236ACE06008AC584 /* LaunchScreen.storyboard */; };
+		87A2EDD223805C0C00F60DEF /* SignInStack.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87A2EDD123805C0C00F60DEF /* SignInStack.xib */; };
+		87A2EDD62380622900F60DEF /* SignInStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A2EDD52380622900F60DEF /* SignInStack.swift */; };
+		87D6167D237C077200409E18 /* Presentation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D6167C237C077200409E18 /* Presentation.storyboard */; };
+		87D61683237C0B0D00409E18 /* PresentationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D61682237C0B0D00409E18 /* PresentationPageViewController.swift */; };
+		87D61685237C0B2800409E18 /* PresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D61684237C0B2800409E18 /* PresentationViewController.swift */; };
+		87D61687237C1C2C00409E18 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D61686237C1C2C00409E18 /* TabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8746258D238314E8004A7D48 /* SignInDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInDelegateProtocol.swift; sourceTree = "<group>"; };
 		8799CFD5236ACE05008AC584 /* Fridgy Recipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fridgy Recipes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8799CFD8236ACE05008AC584 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8799CFDA236ACE05008AC584 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +30,12 @@
 		8799CFE1236ACE06008AC584 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8799CFE4236ACE06008AC584 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8799CFE6236ACE06008AC584 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87A2EDD123805C0C00F60DEF /* SignInStack.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInStack.xib; sourceTree = "<group>"; };
+		87A2EDD52380622900F60DEF /* SignInStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInStack.swift; sourceTree = "<group>"; };
+		87D6167C237C077200409E18 /* Presentation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Presentation.storyboard; sourceTree = "<group>"; };
+		87D61682237C0B0D00409E18 /* PresentationPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationPageViewController.swift; sourceTree = "<group>"; };
+		87D61684237C0B2800409E18 /* PresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationViewController.swift; sourceTree = "<group>"; };
+		87D61686237C1C2C00409E18 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,61 @@
 		8799CFD7236ACE05008AC584 /* Fridgy Recipes */ = {
 			isa = PBXGroup;
 			children = (
-				8799CFD8236ACE05008AC584 /* AppDelegate.swift */,
-				8799CFDA236ACE05008AC584 /* SceneDelegate.swift */,
+				87D6167E237C079500409E18 /* Presentation */,
+				87D61686237C1C2C00409E18 /* TabViewController.swift */,
 				8799CFDE236ACE05008AC584 /* Main.storyboard */,
-				8799CFE1236ACE06008AC584 /* Assets.xcassets */,
-				8799CFE3236ACE06008AC584 /* LaunchScreen.storyboard */,
 				8799CFE6236ACE06008AC584 /* Info.plist */,
+				87A2EDD72381786700F60DEF /* Application */,
 			);
 			path = "Fridgy Recipes";
+			sourceTree = "<group>";
+		};
+		87A2EDD72381786700F60DEF /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8799CFE1236ACE06008AC584 /* Assets.xcassets */,
+				8799CFDA236ACE05008AC584 /* SceneDelegate.swift */,
+				8799CFD8236ACE05008AC584 /* AppDelegate.swift */,
+				8799CFE3236ACE06008AC584 /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		87D6167E237C079500409E18 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				87D61681237C07AF00409E18 /* Controller */,
+				87D61680237C07A800409E18 /* View */,
+				87D6167F237C07A000409E18 /* Model */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		87D6167F237C07A000409E18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8746258D238314E8004A7D48 /* SignInDelegateProtocol.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		87D61680237C07A800409E18 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				87D6167C237C077200409E18 /* Presentation.storyboard */,
+				87A2EDD123805C0C00F60DEF /* SignInStack.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		87D61681237C07AF00409E18 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				87D61682237C0B0D00409E18 /* PresentationPageViewController.swift */,
+				87D61684237C0B2800409E18 /* PresentationViewController.swift */,
+				87A2EDD52380622900F60DEF /* SignInStack.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +185,9 @@
 			files = (
 				8799CFE5236ACE06008AC584 /* LaunchScreen.storyboard in Resources */,
 				8799CFE2236ACE06008AC584 /* Assets.xcassets in Resources */,
+				87D6167D237C077200409E18 /* Presentation.storyboard in Resources */,
 				8799CFE0236ACE05008AC584 /* Main.storyboard in Resources */,
+				87A2EDD223805C0C00F60DEF /* SignInStack.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +198,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87A2EDD62380622900F60DEF /* SignInStack.swift in Sources */,
+				87D61685237C0B2800409E18 /* PresentationViewController.swift in Sources */,
+				87D61683237C0B0D00409E18 /* PresentationPageViewController.swift in Sources */,
 				8799CFD9236ACE05008AC584 /* AppDelegate.swift in Sources */,
+				87D61687237C1C2C00409E18 /* TabViewController.swift in Sources */,
 				8799CFDB236ACE05008AC584 /* SceneDelegate.swift in Sources */,
+				8746258E238314E8004A7D48 /* SignInDelegateProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
